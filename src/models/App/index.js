@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from '../../assets/logo.svg';
-import './index.css';
+import React, {Component} from 'react';
+import './index.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    let pTile = {
+      color: 'red',
+      fontSize: '30px'
+    }
+    return (
+    <p style={pTile}>
+      React.js 組件{this.props.name}
+    </p>
+    )
+  }
 }
 
 export default App;

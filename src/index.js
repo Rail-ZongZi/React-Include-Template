@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './assets/styles/normalize.css';
 import App from './models/App/index.js';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App name="粽子"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
