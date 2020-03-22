@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/styles/normalize.css';
-import App from './models/App/index.js';
+import './assets/styles/index.scss';
+import Timer from './models/Timer/index.jsx';
 import * as serviceWorker from './serviceWorker';
+import App from './models/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App name="粽子"/>
+    <App/>
+    <Timer/>
   </React.StrictMode>,
   document.getElementById('root')
 );

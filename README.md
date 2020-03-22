@@ -38,3 +38,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   }
   <p style={title}></p>
 ```
+
+### 组件之间通讯
+
+> 父子之间赋值
+
+- 
+
+> 子父之间赋值
+
+
+> 兄弟之间赋值
+
+- 实现方式
+  - 使用 `React Context` 
+  - 使用如何传值进行
+![avatar](/src/assets/images/content.png)
