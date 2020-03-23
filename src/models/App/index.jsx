@@ -32,7 +32,7 @@ class App extends Component {
           }
         </ul>
         <button onClick={onBtn}>点击按钮</button>
-        <i className={"iconfont icon-error1"}></i>
+        {/* <i className={"iconfont icon-error1"}></i> */}
       </div>
     )
   }

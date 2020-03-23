@@ -16,6 +16,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   npm run analyze
 ```
 
+- 代码美化 `prettier` 和 `eslit` 相结合
+
+  - ECMAScript 代码风格校验
+  - `--fix`自动修复风格错误
+  - 自定义规则以扩展校验范围
+
+- `PWA` 技术
+
+  - 渐进式网络应用
+  - 可控制的静态缓存
+  - 离线访问能力
+  - 优化载入速度
+
 > 几种方式使用样式
 
 - `jsx` 标签中使用样式
