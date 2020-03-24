@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/styles/index.scss';
+import './index.css'
 import Timer from './models/Timer/index.jsx';
 import * as serviceWorker from './serviceWorker';
 import App from './models/App';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App/>
-    <Timer/>
-  </React.StrictMode>,
+  <div id="app">
+    <App />
+    <Timer />
+  </div>,
   document.getElementById('root')
 );
 

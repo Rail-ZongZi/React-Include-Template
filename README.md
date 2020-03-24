@@ -29,6 +29,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   - 离线访问能力
   - 优化载入速度
 
+- 几种自定义配置方式（官网推荐方式）
+  - **方案一：** 
+  
+```
+  yarn add react-app-rewired customize-cra
+```
+- 使用第三方插件
+    - **方案二：**
+    - 使用[custom-react-scripts](https://custom-react-scripts.netlify.com)环境变量进行配置
+
 > 几种方式使用样式
 
 - `jsx` 标签中使用样式
@@ -52,6 +62,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   <p style={title}></p>
 ```
 
+> 几种定义`React`方式
+
+- **无状态组件**
+
+
+- **有状态组件**
+
+
+
 ### 组件之间通讯
 
 > 父子之间赋值
@@ -64,6 +83,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > 兄弟之间赋值
 
 - 实现方式
-  - 使用 `React Context` 
+  - 使用 `React Context` 上下文，**全局变量**概念
   - 使用如何传值进行
 ![avatar](/src/assets/images/content.png)
+
+
+> 比较知名的**UI**组件库
+
+- [material-ui](https://material-ui.com/)
+- 有赞[Zent](https://youzan.github.io/zent/zh/guides/install)

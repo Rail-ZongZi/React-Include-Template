@@ -1,3 +1,4 @@
+@import '~antd/dist/antd.css';
 $bgColor: #d6e0e1;
 
 body {
@@ -9,7 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: royalblue;
-    button {
+    .btn {
       width: 200px;
       height: 80px;
       border: 1px solid #dcdfe6;
@@ -32,4 +33,11 @@ body {
   ul > li {
     color: rgba(255, 51, 0, 0.5);
   }
+}
+
+.site-calendar-demo-card {
+  width: 300px;
+  margin: auto;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
 }
