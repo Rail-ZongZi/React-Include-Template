@@ -1,64 +1,86 @@
 import React, { Component } from 'react';
-import { Tabs, Calendar, ConfigProvider, Pagination, DatePicker } from 'antd';
-import zhCN from 'antd/es/locale/zh_CN';
-import './index.scss';
-// import Timer from '../Timer/index.jsx'
+import {Button} from "antd";
 
-// function Timer(props) {
-// return <h2>Hello, {props.name}</h2>
-// }
-class Timer extends Component {
+class Greeting extends Component{
   render() {
     return (
-      <h2>Hello, {this.props.name}</h2>
+      <div>Greeting组件</div>
     )
   }
 }
 
-const numbers = [21, 34, 45, 89, 100]
-const { TabPane } = Tabs;
+const Timer = (props) => {
+  return (
+    <div>
+      Timer无状态组件（函数组件）
+      <p>姓名：{props.Name}</p>
+      <p>年龄：{props.Age}</p>
+      <ul>
+        {
+          props.Itmes.map(item => <li key={item.id}>
+            {item.city}
+          </li>)
+        }
+      </ul>
+    </div>
+  )
+};
 
 class App extends Component {
-  render() {
-    function onBtn() {
-      alert("点击按钮...")
-    };
-    function callback(key) {
-      console.log(key)
-    };
-    function onPanelChange(value, mode) {
-      console.log(value, mode)
+  constructor(props) {
+    console.log("constructor");
+    super(props);
+    this.state = {
+      Age: 45
     }
+  }
+  onBtn = () => {
+    this.setState({
+      Age: this.state.Age + 10
+    })
+  };
+
+  /**
+   * 常用生命周期 -- 常用ajax请求
+   */
+  componentDidMount() {
+    console.log("componentDidMount---挂载");
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log("componentDidUpdate---更新视图")
+  }
+
+  componentWillUnmount() {
+    console.log("componentWillUnmount--卸载");
+  }
+
+  // shouldComponentUpdate(nextProps, nextState, nextContext) {
+  // }
+  //
+  // getSnapshotBeforeUpdate(prevProps, prevState) {
+  // }
+
+  render() {
+    let itemList = [
+      {
+        id: "001",
+        city: "江苏"
+      },
+      {
+        id: '002',
+        city: '四川'
+      },
+      {
+        id: '003',
+        city: '上海'
+      }
+    ];
     return (
-      <div className={"title"}>
-        <Timer name="Yello" />
-        <Timer name="Color" />
-        <Timer name="Sollow" />
-        <Tabs defaultActiveKey="1" onChange={callback}>
-          <TabPane tab="Tab 1" key="1">
-            Content of Tab Pane 1
-          </TabPane>
-          <TabPane tab="Tab 2" key="2">
-            Content of Tab Pane 2
-          </TabPane>
-          <TabPane tab="Tab 3" key="3">
-            Content of Tab Pane 3
-          </TabPane>
-        </Tabs>
-        <Pagination total={50} defaultCurrent={1}/>
-        <div className="site-calendar-demo-card">
-          <ConfigProvider locale={zhCN}>
-            <Calendar fullscreen={false} onPanelChange={onPanelChange}/>
-          </ConfigProvider>
-        </div>
-        <DatePicker/>
-        <ul>
-          {
-            numbers.map((item, key) => <li key={key}>{item * 3}</li>)
-          }
-        </ul>
-        <button className={"btn"} onClick={onBtn}>点击按钮</button>
-        {/* <i className={"iconfont icon-error1"}></i> */}
+      <div>
+        <Timer Name={"粽子"} Age={this.state.Age} Itmes={itemList}/>
+        <Button type="primary" onClick={this.onBtn}>点击年龄+1</Button>
+        <Greeting/>
       </div>
     )
   }

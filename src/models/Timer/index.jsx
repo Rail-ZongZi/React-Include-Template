@@ -8,7 +8,6 @@ class Timer extends React.Component {
       <div>
         Timer组件内容
       </div>
-      // <div className="timer" name="粽子" age="23">Timer组件内容</div>
     )
   }
 }

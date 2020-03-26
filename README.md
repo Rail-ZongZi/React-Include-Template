@@ -39,6 +39,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - **方案二：**
     - 使用[custom-react-scripts](https://custom-react-scripts.netlify.com)环境变量进行配置
 
+- 使用 `__test__`文件夹存放组件测试文件
+- 使用 `Pascal Case`命名法
+
 > 几种方式使用样式
 
 - `jsx` 标签中使用样式
@@ -69,6 +72,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - **有状态组件**
 
+> 原生和H5交互
+
+- `jsBridge` 中 `webview`
+
 
 
 ### 组件之间通讯
@@ -92,3 +99,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - [material-ui](https://material-ui.com/)
 - 有赞[Zent](https://youzan.github.io/zent/zh/guides/install)
+
+> 项目部署方案（注：）`无服务器条件下`
+
+- [netlify](https://www.netlify.com/)
+- [GitHub Pages](https://pages.github.com/)
+  - 自动化部署

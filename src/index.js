@@ -2,16 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/styles/index.scss';
 import './index.css'
-import Timer from './models/Timer/index.jsx';
 import * as serviceWorker from './serviceWorker';
 import App from './models/App';
 
 ReactDOM.render(
-  <div id="app">
-    <App />
-    <Timer />
-  </div>,
-  document.getElementById('root')
+	<div>
+		<App/>
+	</div>,
+	document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
