@@ -1,0 +1,54 @@
+@import "../../assets/styles/variables.scss";
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+//
+//#components-layout-demo-custom-trigger .trigger:hover {
+//  color: #1890ff;
+//}
+//
+//#components-layout-demo-custom-trigger .logo {
+//  height: 32px;
+//  background: rgba(255, 255, 255, 0.2);
+//  margin: 16px;
+//}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-shadow: 2px 0 6px rgba(0,21,41,.35);
+  background-color: #001529;
+}
+
+.sider {
+  min-height: 100%;
+}
+
+.header {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logos {
+  height: 44px;
+  vertical-align: top;
+}
+
+.title {
+  color: $heading-color;
+  font-size: 26px;
+  font-width: 600;
+  vertical-align: top;
+}
+
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
